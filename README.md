@@ -6,7 +6,7 @@
 
 ## Demo
 
-#### You can view a live demo of the project [here](https://tmdb-discovery.netlify.app/).
+#### You can view a live demo of the project [here](https://clothes-e-shop.netlify.app/).
 
 ## Features
 
