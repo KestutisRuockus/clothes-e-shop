@@ -1,0 +1,115 @@
+/* style for ratings */
+
+.stars-outer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+  
+  .stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ccc;
+  }
+  .stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f8ce0b;
+  }
+  
+  /* LATEST NEWS SECTION */
+  .latest-news-wrapper {
+    max-width: 30%;
+    min-width: 330px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    gap: -2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(100, 96, 96);
+  }
+  
+  .container .content {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.8s;
+  }
+  
+  .container:hover {
+    cursor: pointer;
+    .latest-news-image {
+      opacity: 1;
+    }
+  }
+  
+  .content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  
+  .content p {
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 1rem 0;
+  }
+  
+  @media screen and (max-width: 790px) {
+    .latest-news-wrapper {
+      max-width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .latest-news-wrapper {
+      max-width: 100%;
+      min-width: 300px;
+    }
+    .container .content {
+      width: 100%;
+    }
+  }
+  
