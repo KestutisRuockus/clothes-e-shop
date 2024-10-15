@@ -13,7 +13,7 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="clotheseshop" element={<ClothesEshopIndex />}>
+      <Route path="/" element={<ClothesEshopIndex />}>
         <Route index element={<MainLayout />} />
         <Route
           path=":id"

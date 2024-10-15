@@ -44,7 +44,7 @@ export default function Checkout() {
 
   // route to main page immediately
   const getBackToMenuNow = (): void => {
-    if (itIsTimeToNavigateToHomepage) return navigate("/clotheseshop");
+    if (itIsTimeToNavigateToHomepage) return navigate("/");
   };
 
   return (
@@ -65,7 +65,7 @@ export default function Checkout() {
             </p>
             <NavLink
               className="rounded-full md:text-md text-xs"
-              to="/clotheseshop"
+              to="/"
             >
               <Button text="To the Main page" />
             </NavLink>
